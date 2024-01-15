@@ -1,0 +1,6 @@
+.item-list {
+  text-align: center;
+  li {
+    margin: 0 0 0 3rem;
+  }
+}
