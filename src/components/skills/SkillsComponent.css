@@ -1,7 +1,12 @@
-.skills-card-container {
+.skills-container {
   background-color: #323338;
 }
 
 .card-container {
+  width: 30rem;
   background-color: #2c2d32;
+}
+
+.divider-vertical {
+  border-right: 2px solid #9ca3af;
 }

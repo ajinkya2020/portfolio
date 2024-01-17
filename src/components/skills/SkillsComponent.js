@@ -13,25 +13,30 @@ let skillCardList = [
   {
     title: "Web Development",
     icon: skillCardIcons.webDev,
-    desc: '15 Projects'
+    desc: 'Skilled in Angular, React, Node.js, and Express.js. Expertise in crafting dynamic and scalable web solutions. Proven track record in building robust SPAs and efficient UIs.'
   },
   {
     title: "Game Development",
     icon: skillCardIcons.gameDev,
-    desc: '15 Projects'
+    desc: 'Versatile in Unity Engine, Skilled in creating captivating gaming experiences, implementing gameplay mechanics'
   },
   {
     title: "UI/UX Design",
     icon: skillCardIcons.uiUxDesign,
-    desc: '15 Projects'
+    desc: 'Versatile UI/UX designer with a keen eye for creating visually appealing and user-centric digital experiences.'
   },
 ]
 
 
 function SkillsComponent() {
   return (
-    <div>
-      <div className='skills-card-container mt-20 py-5 px-40 flex justify-between'>
+    <div className='skills-container mt-20 py-5'>
+      <div className='flex justify-center py-5'>
+        <ExperianceInfo value='2+' desc='Years Experience'></ExperianceInfo>
+        <div className="divider-vertical mx-10"></div>
+        <ExperianceInfo value='3' desc='Achievements'></ExperianceInfo>
+      </div>
+      <div className='flex flex-wrap justify-center'>
         {skillCardList.map((skill, index) => (
           <SkillCardComponent key={index} cardIcon={skill.icon} title={skill.title} desc={skill.desc}></SkillCardComponent>
         ))}
@@ -64,6 +69,16 @@ function SkillCardComponent(props) {
       <FontAwesomeIcon size='5x' icon={cardIcon} />
       <div className='mt-3 font-bold'>{props.title}</div>
       <div className='mt-3 text-gray-400'>{props.desc}</div>
+    </div>
+  )
+}
+
+
+function ExperianceInfo(props) {
+  return (
+    <div className='text-xl'>
+      <div className='font-bold text-yellow-600'>{props.value}</div>
+      <span>{props.desc}</span>
     </div>
   )
 }
