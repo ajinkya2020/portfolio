@@ -13,10 +13,10 @@ function HomeComponent() {
           <section className="homenav-social">
             <nav>
               <ul>
-                <li><a href="https://www.linkedin.com/in/ajinkya-suryawanshi-815851190/"><img src="/linkedin_icon.png" alt=""/></a></li>
-                <li><a href="https://github.com/ajinkya2020"><img src="/github_icon.png" alt=""/></a></li>
-                <li><a href="https://www.instagram.com/_aajinkya_/"><img src="/instagram_icon.png" alt="Instagram"/></a></li>
-                <li><a href="mailto: ajinkyasuryawanshi20@gmail.com"><img src="/mail_icon.png" alt=""/></a></li>
+                <li><a href="https://www.linkedin.com/in/ajinkya-suryawanshi-815851190/"><img src="/linkedin_icon.png" alt="linkedIn"/></a></li>
+                <li><a href="https://github.com/ajinkya2020"><img src="/github_icon.png" alt="github"/></a></li>
+                <li><a href="https://www.instagram.com/_aajinkya_/"><img src="/instagram_icon.png" alt="instagram"/></a></li>
+                <li><a href="mailto: ajinkyasuryawanshi20@gmail.com"><img src="/mail_icon.png" alt="gmail"/></a></li>
               </ul>
             </nav>
           </section>
