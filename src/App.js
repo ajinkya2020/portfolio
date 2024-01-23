@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { Outlet } from "react-router-dom";
 import './App.css';
 import HomeComponent from './components/home/HomeComponent';
 import HeaderComponent from './components/header/HeaderComponent';
@@ -9,9 +10,7 @@ function App() {
   return (
     <div className="App px-16 py-10">
       <HeaderComponent></HeaderComponent>
-      <HomeComponent></HomeComponent>
-      <SkillsComponent></SkillsComponent>
-      <ProjectsComponent></ProjectsComponent>
+      <Outlet />
     </div>
   );
 }
