@@ -1,0 +1,38 @@
+.my-name {
+  width: 30%;
+  border-bottom: 5px solid rgb(202 138 4);
+}
+
+.introduction-title {
+  font-size: 12px;
+}
+
+.homenav-social {
+  padding-top: 30px;
+  border-top: 50px; 
+  background: none;
+}
+
+.homenav-social ul :hover {
+  opacity: 0.8;
+}
+
+.homenav-social img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.homenav-social {
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  ul {
+    list-style-type: none;
+  }
+}
