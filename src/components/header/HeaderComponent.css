@@ -8,3 +8,7 @@
     margin: 0 0 0 3rem;
   }
 }
+
+.active {
+  border-bottom: 0.2rem solid rgb(202 138 4);
+}
