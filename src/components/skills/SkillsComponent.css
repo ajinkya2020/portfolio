@@ -1,5 +1,8 @@
 .skills-container {
   background-color: #323338;
+  position: relative;
+  animation-name: skills-container-anime;
+  animation-duration: 0.7s;
 }
 
 .card-container {
@@ -9,4 +12,9 @@
 
 .divider-vertical {
   border-right: 2px solid #9ca3af;
+}
+
+@keyframes skills-container-anime {
+  0%  { top:10rem;}
+  100% { top:0rem; }
 }

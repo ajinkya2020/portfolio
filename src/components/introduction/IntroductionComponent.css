@@ -4,12 +4,12 @@
 }
 
 .introduction-title {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .homenav-social {
-  padding-top: 30px;
-  border-top: 50px; 
+  padding-top: 2rem;
+  border-top: 2rem;
   background: none;
 }
 
@@ -19,8 +19,8 @@
 
 .homenav-social img {
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
@@ -29,10 +29,32 @@
 .homenav-social {
   li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 1.3rem;
     vertical-align: middle;
   }
   ul {
     list-style-type: none;
   }
+}
+
+.intro-left {
+  position: relative;
+  animation-name: intro-left-anime;
+  animation-duration: 0.7s;
+}
+
+.intro-right {
+  position: relative;
+  animation-name: intro-right-anime;
+  animation-duration: 0.7s;
+}
+
+@keyframes intro-left-anime {
+  0%  { right:10rem; }
+  100% { right:0rem; }
+}
+
+@keyframes intro-right-anime {
+  0%  { left:10rem; }
+  100% { left:0rem; }
 }

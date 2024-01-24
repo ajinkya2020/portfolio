@@ -3,8 +3,8 @@ import './IntroductionComponent.css'
 
 function IntroductionComponent() {
   return (
-    <div className="flex justify-around">
-      <div className="text-3xl text-left">
+    <div className="block md:flex lg:flex justify-around">
+      <div className="intro-left text-3xl text-left">
         <div>Ajinkya</div>
         <span>Suryawanshi</span>
         <span className="font-bold text-yellow-600">.</span>
@@ -20,7 +20,7 @@ function IntroductionComponent() {
           </nav>
         </section>
       </div>
-      <div className="text-left">
+      <div className="intro-right text-left mt-10 md:mt-0 lg:mt-0">
         <div className="font-bold text-yellow-600 introduction-title">INTRODUCTION</div>
         <div>Full Stack Web Developer</div>
         <div className="text-gray-400">I work as a software developer based in India,<br></br> specializing in Angular, React, MongoDB, MySQL, Express, and Node for my tech stack.</div>
