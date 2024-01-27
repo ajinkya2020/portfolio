@@ -3,6 +3,7 @@ import "./HomeComponent.css";
 import SkillsComponent from "../skills/SkillsComponent";
 import ProjectsComponent from "../projects/ProjectsComponent";
 import IntroductionComponent from "../introduction/IntroductionComponent";
+import ExperienceComponent from "../experience/ExperienceComponent";
 
 function HomeComponent() {
   return (
@@ -10,6 +11,7 @@ function HomeComponent() {
       <IntroductionComponent />
       <SkillsComponent />
       <ProjectsComponent />
+      <ExperienceComponent />
     </div>
   );
 }

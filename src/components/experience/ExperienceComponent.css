@@ -1,0 +1,12 @@
+.experience-main-container {
+  background-color: #323338;
+}
+
+.desc-experience {
+  background-color: #2c2d32;
+  width: 80%;
+}
+
+.experience-achievements > ul {
+  list-style-type: disc;
+}
