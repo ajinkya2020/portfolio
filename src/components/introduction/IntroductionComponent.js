@@ -1,5 +1,8 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub, faInstagram, faGoogle } from '@fortawesome/free-brands-svg-icons'
 import './IntroductionComponent.css'
+import TitleComponent from '../shared/TitleComponent'
 
 function IntroductionComponent() {
   return (
@@ -12,17 +15,17 @@ function IntroductionComponent() {
         <section className="homenav-social">
           <nav>
             <ul>
-              <li><a href="https://www.linkedin.com/in/ajinkya-suryawanshi-815851190/" target="_blank" rel='noopener noreferrer'><img src="/linkedin_icon.png" alt="linkedIn"/></a></li>
-              <li><a href="https://github.com/ajinkya2020" target="_blank" rel='noopener noreferrer'><img src="/github_icon.png" alt="github"/></a></li>
-              <li><a href="https://www.instagram.com/_aajinkya_/" target="_blank" rel='noopener noreferrer'><img src="/instagram_icon.png" alt="instagram"/></a></li>
-              <li><a href="mailto: ajinkyasuryawanshi20@gmail.com" target="_blank" rel='noopener noreferrer'><img src="/mail_icon.png" alt="gmail"/></a></li>
+              <li><a href="https://www.linkedin.com/in/ajinkya-suryawanshi-815851190/" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={faLinkedin}/></a></li>
+              <li><a href="https://github.com/ajinkya2020" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={faGithub} /></a></li>
+              <li><a href="https://www.instagram.com/_aajinkya_/" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={faInstagram} /></a></li>
+              <li><a href="mailto: ajinkyasuryawanshi20@gmail.com" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={faGoogle} /></a></li>
             </ul>
           </nav>
         </section>
       </div>
       <div className="intro-right text-left mt-10 md:mt-0 lg:mt-0">
-        <div className="font-bold text-yellow-600 introduction-title">INTRODUCTION</div>
-        <div>Full Stack Web Developer</div>
+      <TitleComponent title={'INTRODUCTION'}></TitleComponent>
+        <div>Web Developer</div>
         <div className="text-gray-400">I work as a software developer based in India,<br></br> specializing in Angular, React, MongoDB, MySQL, Express, and Node for my tech stack.</div>
       </div>
     </div>
