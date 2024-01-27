@@ -1,12 +1,13 @@
 import React from 'react'
 import './ProjectsComponent.css'
+import TitleComponent from '../shared/TitleComponent'
 
 let projectList = [
   {
     title: "COVID-19 Tracker",
     image: './covid19Tracker.png',
     desc: "A comprehensive COVID-19 Tracker, meticulously designed to provide real-time updates on global and country-specific cases. Stay informed on cases, recoveries, and losses.",
-    skills: ['Javascript', 'React', 'disease.sh'],
+    skills: ['React', 'react-chartjs-2', 'disease.sh'],
     projectLink: "https://covid19tracker-e2bcf.web.app/",
     sourceCodeLink: "https://github.com/ajinkya2020/Covid-19-Tracker"
   },
@@ -38,7 +39,7 @@ let projectList = [
 function ProjectsComponent() {
   return (
     <div className='projects-container mt-20 py-5'>
-      <div className="font-bold text-yellow-600 introduction-title">FEATURED PROJECTS</div>
+      <TitleComponent title={'FEATURED PROJECTS'}></TitleComponent>
       <div>Explore my projects and witness the fusion of technology and genius.</div>
       <div className='flex flex-wrap justify-center'>
         {projectList.map((skill, index) => (
@@ -79,7 +80,7 @@ function ProjectCardComponent(props) {
 
 function ProjectSkill(props) {
   return (
-    <span className='bg-white text-black text-sm rounded-xl py-1 px-2 ms-3'>{props.skill}</span>
+    <span className='bg-white text-black font-bold text-sm whitespace-nowrap rounded-xl py-1 px-2 ms-3'>{props.skill}</span>
   )
 }
 
