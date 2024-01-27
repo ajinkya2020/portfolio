@@ -32,9 +32,9 @@ function SkillsComponent() {
   return (
     <div className='skills-container mt-20 py-5'>
       <div className='flex justify-center py-5'>
-        <ExperianceInfo value='2+' desc='Years Experience'></ExperianceInfo>
+        <ExperienceInfo value='2+' desc='Years Experience'></ExperienceInfo>
         <div className="divider-vertical mx-10"></div>
-        <ExperianceInfo value='3' desc='Achievements'></ExperianceInfo>
+        <ExperienceInfo value='3' desc='Achievements'></ExperienceInfo>
       </div>
       <div className='flex flex-wrap justify-center'>
         {skillCardList.map((skill, index) => (
@@ -74,7 +74,7 @@ function SkillCardComponent(props) {
 }
 
 
-function ExperianceInfo(props) {
+function ExperienceInfo(props) {
   return (
     <div className='text-xl'>
       <div className='font-bold text-yellow-600'>{props.value}</div>
