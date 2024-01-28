@@ -16,7 +16,7 @@ function HeaderComponent() {
   };
 
   return (
-    <div className='header-main flex justify-between px-5 py-3 sticky top-0 z-10'>
+    <div className='header-main flex justify-between px-20 py-3 sticky top-0 z-10'>
       <span className='text-3xl'>AJ<span className='font-bold text-yellow-600'>.</span></span>
       <nav>
         <ul className='flex item-list text-l py-2'>
