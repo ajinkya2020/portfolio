@@ -1,8 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faInstagram, faGoogle } from '@fortawesome/free-brands-svg-icons'
-import './IntroductionComponent.css'
 import TitleComponent from '../shared/TitleComponent'
+import './IntroductionComponent.css'
 
 function IntroductionComponent() {
   return (

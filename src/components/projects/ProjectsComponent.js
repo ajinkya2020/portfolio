@@ -1,6 +1,6 @@
 import React from 'react'
-import './ProjectsComponent.css'
 import TitleComponent from '../shared/TitleComponent'
+import './ProjectsComponent.css'
 
 let projectList = [
   {
