@@ -6,7 +6,7 @@ import './IntroductionComponent.css'
 
 function IntroductionComponent() {
   return (
-    <div className="block md:flex lg:flex justify-around">
+    <div className="block md:flex lg:flex justify-around px-20">
       <div className="intro-left text-3xl text-left">
         <div>Ajinkya</div>
         <span>Suryawanshi</span>

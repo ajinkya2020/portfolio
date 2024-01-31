@@ -5,9 +5,9 @@ import './FooterComponent.css'
 
 function FooterComponent() {
   return (
-    <div className='footer-container mt-10 py-5 flex justify-center'>
+    <div className='footer-container mt-10 py-5 flex justify-evenly'>
       <div className='font-bold text-3xl'>THANKS<br/>FOR<br/>VISITING <span className='text-yellow-600'>!</span></div>
-      <div className='ms-72 my-5'>
+      <div className='my-5'>
         <div className='text-yellow-600'>Feel free to connect with me.</div>
         <section className='text-2xl mt-1 mb-3'>
           <nav>
