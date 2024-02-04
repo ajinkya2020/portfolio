@@ -19,14 +19,15 @@ function HeaderComponent() {
     <div className='header-main flex justify-between px-20 py-3 sticky top-0 z-10'>
       <span className='text-3xl'>AJ<span className='font-bold text-yellow-600'>.</span></span>
       <nav>
-        <ul className='flex item-list text-l py-2'>
+        <ul className='flex item-list text-l py-2 text-gray-500'>
           {listItems.map((item, index) => (
             <li
               key={index}
-              className={index === activeItem ? 'active px-2' : 'px-2'}
               onClick={() => handleItemClick(index)}
             >
-              <Link to={item.route}>{item.title}</Link>
+              <Link className={index === activeItem ? 'active px-2' : 'px-2 list-item'} to={item.route}>
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>
