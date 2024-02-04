@@ -54,7 +54,7 @@ function ExperienceComponent() {
 
 function DescExperienceComponent(props) {
   return (
-    <div className='desc-experience block md:flex lg:flex mx-auto p-10 mt-5'>
+    <div className='desc-experience block md:flex lg:flex mx-auto p-10 mt-5 rounded-lg'>
       <div className='w-full md:w-1/4 lg:w-1/4 text-left px-5'>
         <span className='block text-yellow-600'>{props.companyName}</span>
         <div className='text-sm'>{props.duration}</div>

@@ -53,10 +53,10 @@ function ProjectsComponent() {
 function ProjectCardComponent(props) {
   return (
     <div className='project-card-container m-10'>
-      <div className="flip-card-inner">
-        <div className="flip-card-front">
+      <div className="flip-card-inner rounded-lg">
+        <div className="flip-card-front rounded-lg">
           <div>
-            <img className='projectImage' src={props.cardImage} alt="linkedIn"/>
+            <img className='projectImage rounded-lg' src={props.cardImage} alt="linkedIn"/>
             <div className='mt-3 font-bold'>{props.title}</div>
             <div className='mt-3'>
               {props.skills.map((skill, index) => (
@@ -66,7 +66,7 @@ function ProjectCardComponent(props) {
           </div>
           <div className='mt-3 text-gray-400'>{props.desc}</div>
         </div>
-        <div className="flip-card-back py-40 px-28">
+        <div className="flip-card-back py-40 px-28 rounded-lg">
           <div>
             <div className='font-bold'>{props.title}</div>
             <button className={!props.projectLink ? 'mt-10 cursor-not-allowed' : 'mt-10'}><a href={props.projectLink} target="_blank" rel='noopener noreferrer'>Live Preview</a></button>
@@ -80,7 +80,7 @@ function ProjectCardComponent(props) {
 
 function ProjectSkill(props) {
   return (
-    <span className='bg-white text-black font-bold text-sm whitespace-nowrap rounded-xl py-1 px-2 ms-3'>{props.skill}</span>
+    <span className='bg-gray-500 font-bold text-sm whitespace-nowrap rounded-xl py-1 px-2 ms-3'>{props.skill}</span>
   )
 }
 

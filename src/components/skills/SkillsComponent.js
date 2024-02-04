@@ -65,7 +65,7 @@ function SkillCardComponent(props) {
   }, [props.cardIcon]);
 
   return (
-    <div className='card-container m-5 block p-20'>
+    <div className='card-container m-5 block p-20 rounded-lg'>
       <FontAwesomeIcon size='5x' icon={cardIcon} />
       <div className='mt-3 font-bold'>{props.title}</div>
       <div className='mt-3 text-gray-400'>{props.desc}</div>
