@@ -48,3 +48,8 @@
   background-color: #3d3e46;
   transform: rotateY(180deg);
 }
+
+.project-desc-container {
+  background-color: #323338;
+  width: 80%;
+}
