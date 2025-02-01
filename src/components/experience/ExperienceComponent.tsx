@@ -1,6 +1,5 @@
-import React from 'react'
-import './ExperienceComponent.css'
-import TitleComponent from '../shared/TitleComponent'
+import TitleComponent from '../shared/TitleComponent';
+import './ExperienceComponent.scss';
 
 let experienceList = [
   {
@@ -52,7 +51,15 @@ function ExperienceComponent() {
   )
 }
 
-function DescExperienceComponent(props) {
+interface DescExperienceComponentProps {
+  companyName: string;
+  duration: string;
+  location: string;
+  role: string;
+  achievementList: string[]
+}
+
+function DescExperienceComponent(props: DescExperienceComponentProps) {
   return (
     <div className='desc-experience block md:flex lg:flex mx-auto p-10 mt-5 rounded-lg'>
       <div className='w-full md:w-1/4 lg:w-1/4 text-left px-5'>

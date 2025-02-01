@@ -1,8 +1,8 @@
-import React from 'react'
+import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faInstagram, faGoogle } from '@fortawesome/free-brands-svg-icons'
 import TitleComponent from '../shared/TitleComponent'
-import './IntroductionComponent.css'
+import './IntroductionComponent.scss'
 
 function IntroductionComponent() {
   return (
@@ -18,7 +18,7 @@ function IntroductionComponent() {
               <li><a href="https://www.linkedin.com/in/ajinkya-suryawanshi-815851190/" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={faLinkedin}/></a></li>
               <li><a href="https://github.com/ajinkya2020" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={faGithub} /></a></li>
               <li><a href="https://www.instagram.com/_aajinkya_/" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={faInstagram} /></a></li>
-              <li><a href="mailto: ajinkyasuryawanshi20@gmail.com" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={faGoogle} /></a></li>
+              <li><a href="mailto: ajinkyasuryawanshi20@gmail.com" target="_blank" rel='noopener noreferrer'><FontAwesomeIcon icon={faEnvelope} /></a></li>
             </ul>
           </nav>
         </section>

@@ -1,7 +1,7 @@
-import { React, useState, useEffect } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faGamepad, faPenNib } from '@fortawesome/free-solid-svg-icons'
-import './SkillsComponent.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useEffect, useState } from 'react'
+import './SkillsComponent.scss'
 
 let skillCardIcons = {
   webDev: 'webDev',
@@ -27,6 +27,11 @@ let skillCardList = [
   },
 ]
 
+interface SkillCardComponentProps {
+  title: string;
+  cardIcon: string;
+  desc: string;
+}
 
 function SkillsComponent() {
   return (
@@ -45,7 +50,7 @@ function SkillsComponent() {
   )
 }
 
-function SkillCardComponent(props) {
+function SkillCardComponent(props: SkillCardComponentProps) {
   const [cardIcon, setCardIcon] = useState(faCode);
   
   useEffect(() => {
@@ -74,7 +79,7 @@ function SkillCardComponent(props) {
 }
 
 
-function ExperienceInfo(props) {
+function ExperienceInfo(props: { value: string, desc: string }) {
   return (
     <div className='text-xl'>
       <div className='font-bold text-yellow-600'>{props.value}</div>

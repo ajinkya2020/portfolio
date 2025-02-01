@@ -1,9 +1,8 @@
-import React from "react";
-import "./HomeComponent.css";
-import SkillsComponent from "../skills/SkillsComponent";
-import ProjectsComponent from "../projects/ProjectsComponent";
-import IntroductionComponent from "../introduction/IntroductionComponent";
 import ExperienceComponent from "../experience/ExperienceComponent";
+import IntroductionComponent from "../introduction/IntroductionComponent";
+import ProjectsComponent from "../projects/ProjectsComponent";
+import SkillsComponent from "../skills/SkillsComponent";
+import "./HomeComponent.scss";
 
 function HomeComponent() {
   return (

@@ -1,25 +1,24 @@
-import React from 'react'
-import './ProjectsComponent.css'
+import { PROJECT_LIST } from './Projects.constants'
 import { ProjectSkill } from './ProjectsComponent'
-import { PROJECT_LIST } from './projects.constants.ts'
+import './ProjectsComponent.scss'
 
 function ProjectsMainComponent() {
   return (
     <>
       {PROJECT_LIST.map((project, index) => (
-        <ProjectCardMainComponent key={index} {...project}></ProjectCardMainComponent>
+        <ProjectCardMainComponent key={index} {...project} cardImage={project.image}></ProjectCardMainComponent>
       ))}
     </>
   )
 }
 
-function ProjectCardMainComponent(props) {
+function ProjectCardMainComponent(props: ProjectCardComponentProps) {
   return (
-    <div className='project-desc-container bg-gray-500 block md:flex lg:flex mx-auto p-10 mt-5 rounded-lg'>
-      <img className='projectImage rounded-lg' src={props.image} alt="linkedIn"/>
+    <div className='project-desc-container block md:flex lg:flex mx-auto p-10 mt-5 rounded-lg'>
+      <img className='projectImage rounded-lg' src={props.cardImage} alt="linkedIn"/>
       <div className="divider-vertical mx-5"></div>
       <div className='w-full md:w-3/4 lg:w-3/4 text-left ms-5'>
-        <div>{props.projectTitle}</div>
+        <div>{props.title}</div>
         <div className='mt-3'>
           {props.skills.map((skill, index) => (
             <span className={index !== 0 ? 'ms-3' : ''}>

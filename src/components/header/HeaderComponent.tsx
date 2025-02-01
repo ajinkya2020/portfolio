@@ -1,6 +1,6 @@
-import { React, useState} from 'react'
+import { useState } from 'react';
 import { Link } from "react-router-dom";
-import './HeaderComponent.css'
+import "./HeaderComponent.scss";
 
 const listItems = [
   { title: "Home", route: '/'},
@@ -11,7 +11,7 @@ const listItems = [
 function HeaderComponent() {
   const [activeItem, setActiveItem] = useState(0);
 
-  const handleItemClick = (index) => {
+  const handleItemClick = (index: number) => {
     setActiveItem(index);
   };
 
